@@ -1,0 +1,36 @@
+{
+  "name": "software",
+  "version": "1.0.0",
+  "description": "FXBTG soft - visdark",
+  "main": "dist/js/swiper.js",
+  "style": "dist/css/swiper.css",
+  "files": [
+    "dist",
+    "src",
+    "*.json",
+    "*.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nolimits4web/Swiper.git"
+  },
+  "keywords": [
+    "swiper",
+    "swipe",
+    "slider"
+  ],
+  "author": "visdark",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nolimits4web/Swiper/issues"
+  },
+  "homepage": "http://www.idangero.us/swiper/",
+  "engines": {
+    "node": ">= 4.7.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.4"
+  },
+  "scripts": {}
+}
