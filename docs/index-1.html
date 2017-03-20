@@ -3,17 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>分辨率设计</title>
+    <!--滑动插件未整理 引用-->
+    <link rel="stylesheet" href="../src/css/swiper.css" />
     <link rel="stylesheet" href="dist/css/vis-1.css" />
 </head>
 <body>
-<div class="box"><div class="box1">
-    小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含
-    <p>分辨率放大缩小都不影响基本效果</p>
+<div class="box">
+    <div class="box2">
+        <div class="title">
+            <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a> <a href="">测试div不换行</a>
+        小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含
+    </div>
+        <!-- 左右滑动不循环 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+                <div class="swiper-slide">Slide 10</div>
+            </div>
+        </div>
+        <p>分辨率放大缩小都不影响基本效果</p>
     <p>比例为10:9</p>
     模型盒子
     需要缩放比例100%-150%之间无明显变形</div>
-    <div class="box1">小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含
+    <div class="box1">
+        小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含
         小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含小心下一个DIV的属性影响到整体属性需要设置一下，设置成包含</div>
 </div>
 </body>
+<!--添加滑动插件-->
+<script src="../src/js/swiper.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 5,
+        spaceBetween: 0
+    });
+</script>
+
 </html>
