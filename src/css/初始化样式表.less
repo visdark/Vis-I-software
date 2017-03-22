@@ -1,3 +1,8 @@
+/*---默认全局都有动画--*/
+*{
+animation:all 5s infinite;
+-webkit-animation:all 5s infinite;
+}
 // 初始化样式表
 html {
   padding: 0;
@@ -92,6 +97,17 @@ svg:not(:root) {
 ::-webkit-scrollbar-track-piece{
   background-color:black;
   -webkit-border-radius:0;
+}
+/*---图标库初始化--*/
+i {
+  display: inline-block;
+  font-style: normal;
+  font-family: 'iconfont';
+  width: 3vh;
+  height: 3vh;
+  font-size: 1.5vh;
+  line-height: 3vh;
+  text-align: center;
 }
 
 

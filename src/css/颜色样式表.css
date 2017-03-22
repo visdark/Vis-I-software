@@ -1,0 +1,12 @@
+/*---图标默认样式重置（白色）--*/
+i {
+  color: rgba(255, 255, 255, 0.6);
+}
+i:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/*---图标默认样式重置（黑色）--*/
+.bg-red:hover {
+  background: rgba(255, 0, 0, 0.8);
+}

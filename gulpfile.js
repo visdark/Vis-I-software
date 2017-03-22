@@ -6,36 +6,17 @@
         uglify=require('gulp-uglify'),   //js压缩
         rename=require('gulp-rename'),   //文件重命名
         jshint=require('gulp-jshint'),   //js检查
-        notify=require('gulp-notify');   //提示
-        paths = {
-            root: './',
-            visdark: {
-                root: 'visdark/',
-                styles: 'visdark/css/',
-                scripts: 'visdark/js/'
-            },
-            dist: {
-                root: 'docs/dist/',
-                styles: 'docs/dist/css/',
-                scripts: 'docs/dist/js/'
-            },
-            source: {
-                root: 'src/',
-                styles: 'src/less/',
-                scripts: 'src/js/*.js'
-            }
-        },
+        notify=require('gulp-notify'),   //提示
         software = {
-        filename: 'software',
-        banner: [
+            filename: 'software',
+            banner: [
             '/**',
             ' * FXBTG 版权设置',
             ' * 前端框架：visdark',
             ' * 许可:MIT',
             ' * 发布时间:2017年3月21日',
             ' */',
-            ''].join('\n')
-    };
+            ''].join('\n')};
 
     // 生成主要JS和CSS
     gulp.task('main', function (cb) {
@@ -68,8 +49,23 @@
             .pipe(concat('plug.js'))
             .pipe(gulp.dest('./docs/dist/js/'))
             .pipe(uglify())
+            //.pipe(jshint())
+            //.pipe(jshint.reporter('default'))
             .pipe(rename({suffix:'.min'}))
             .pipe(gulp.dest('./docs/dist/js/'))
             .pipe(notify({message:'压缩插件JS已经成功'}));
         cb();
+    });
+    // 生成和压缩HTML
+    gulp.task('html', function (cb) {
+        gulp.src('./src/*.html')
+            .pipe(gulp.dest('./docs/dist/'))
+            .pipe(notify({message:'移动HTML已经成功'}));
+        cb();
+    });
+    // 监视自动化
+    gulp.task('watch',function(){
+        gulp.watch(['./src/css/*.css','./src/js/*.js'],['main']);
+        gulp.watch(['./src/plug/*.css','./src/plug/*.js'],['plug']);
+        gulp.watch('./src/*.html',['html']);
     });

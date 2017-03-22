@@ -1,0 +1,39 @@
+header {
+  background-color: darkgoldenrod;
+  height: 5vh;
+  display: block;
+  position: relative;
+}
+footer {
+  background-color: darkgoldenrod;
+  height: 5vh;
+}
+.top {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+}
+.top .top-icon {
+  width: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.top .top-icon .bg-red:hover {
+  -webkit-transition: all 1s ease-out 0.2s;
+  transition: all 1s ease-out 0.2s;
+}
+.top .top-icon i {
+  display: block;
+  float: left;
+  cursor: pointer;
+  width: 5vh;
+}
+.top .top-icon i:hover {
+  -webkit-transition: all 1s ease-out 0s;
+  transition: all 1s ease-out 0s;
+}
+.top .top {
+  height: 30px;
+  line-height: 30px;
+}

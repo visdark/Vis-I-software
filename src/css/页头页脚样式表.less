@@ -1,0 +1,39 @@
+header{
+  background-color: darkgoldenrod;
+  height: 5vh;
+  display: block;
+  position: relative;
+}
+footer{
+  background-color: darkgoldenrod;
+  height: 5vh;
+}
+.top{
+  display: inline-flex;
+  width: 100%;
+  align-items:center;
+  .top-icon{
+    width: auto;
+    position: fixed;
+    right: 0;
+    top:0;
+    .bg-red:hover{
+      -webkit-transition: all 1s ease-out .2s;
+      transition: all 1s ease-out .2s;
+    }
+    i{
+      display: block;
+      float: left;
+      cursor: pointer;
+      width: 5vh;
+      &:hover{
+        -webkit-transition: all 1s ease-out .0s;
+        transition: all 1s ease-out .0s;
+      }
+
+    }
+  }
+  .top{
+    height: 30px;line-height: 30px;
+  }
+}
