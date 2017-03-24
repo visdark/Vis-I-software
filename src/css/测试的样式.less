@@ -1,0 +1,89 @@
+// 布局样式表 -
+.box {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  .main-box{
+    position: relative;
+    top: 5vh;
+    box-sizing: border-box;
+    width:90vw;
+    height: 90vh;
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: #e4e4e4;
+    margin: 0 auto;
+  }
+  .box1{
+    font-size: 12px;
+    width: 50vw;
+    height: 10vh;
+    float: left;
+    overflow: auto;
+    overflow-x: hidden;
+  }
+  .box2{
+    width: 50vw;
+    height: 20vw;
+    float: left;
+    overflow: auto;
+    overflow-x: hidden;
+    .title{
+      white-space:nowrap;
+      width: auto;
+      overflow: auto;
+      overflow-y: hidden;
+      a{
+        display: inline-block;
+        width: 10vw;
+        text-align: center;
+        background-color: #aaffaa;
+      }
+    }
+  }
+}
+h1{
+  background-color: #232b4e;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.title-1{
+  width: 100vw;
+  background-color: #232b4e;
+  font-weight: bold;
+  text-align: center;
+  height: 5vh;
+  position: absolute;
+  line-height: 5vh;
+  top:0;
+  color: white;
+  font-size: 3vh;
+  max-font-size: 4vh;
+  small {
+    font-size: 1vh;
+    background-color: #007aff;
+    display: inline-block;
+    height: 2vh;
+    line-height: 2vh;
+    padding: 0 .2vw;
+    margin: 0 .5vw;
+    color: white;
+  }
+}
+.title-2{
+  box-sizing: border-box;
+  width: 100vw;
+  background-color: #282828;
+  font-weight: bold;
+  text-align: center;
+  height: 5vh;
+  position: fixed;
+  line-height: 2vh;
+  bottom:0;
+  color: white;
+  font-size: .5vh;
+  max-font-size: 4vh;
+  padding: .5vh;
+}

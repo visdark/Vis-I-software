@@ -10,3 +10,10 @@ i:hover {
 .bg-red:hover {
   background: rgba(255, 0, 0, 0.8);
 }
+body {
+  background: url("../images/bg.png") no-repeat center center fixed;
+}
+#foot {
+  background: url("../images/bg-foot.png") no-repeat bottom center fixed;
+  background-size: 100% 100%;
+}

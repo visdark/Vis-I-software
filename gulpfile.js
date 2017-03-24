@@ -20,8 +20,8 @@
 
     // 生成主要JS和CSS
     gulp.task('main', function (cb) {
-        gulp.src('./src/css/*.css')
-            .pipe(concat('main.css'))
+        gulp.src('./src/css/app.css')
+            .pipe(rename('main.css'))
             .pipe(gulp.dest('./docs/dist/css/'))
             .pipe(cleancss())
             .pipe(rename({suffix:'.min'}))

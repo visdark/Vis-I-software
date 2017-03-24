@@ -1,17 +1,20 @@
+@import "全局动态函数值";  // 提取默认配置
 header{
-  background-color: darkgoldenrod;
   height: 5vh;
   display: block;
   position: relative;
 }
 footer{
-  background-color: darkgoldenrod;
   height: 5vh;
+  bottom: 0;
 }
-.top{
+#top{
   display: inline-flex;
   width: 100%;
   align-items:center;
+  color: @bai-6;
+  padding: 0 @f-12;
+  font-size: @f-12;
   .top-icon{
     width: auto;
     position: fixed;
@@ -25,7 +28,10 @@ footer{
       display: block;
       float: left;
       cursor: pointer;
-      width: 5vh;
+      width: 4vh;
+      height: 3vh;
+      line-height: 3vh;
+      font-size: @f-14;
       &:hover{
         -webkit-transition: all 1s ease-out .0s;
         transition: all 1s ease-out .0s;
@@ -33,7 +39,37 @@ footer{
 
     }
   }
-  .top{
-    height: 30px;line-height: 30px;
+  .top-con{
+    height: 5vh;line-height: 5vh;;font-size: @f-12;
+  }
+}
+
+#foot {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100vw;
+  ul{
+    width: 76vw;
+    margin: 0 auto;
+    overflow: hidden;
+    max-height: 20vh;
+    li{
+      display: inline-block;
+      a{
+        display: block;
+        color:@bai-8;
+        padding: 0 @f-10;
+        filter:alpha(Opacity=50);-moz-opacity:0.5;opacity: 0.5;
+        &.on{
+          filter:alpha(Opacity=100);-moz-opacity:1;opacity: 1;
+        }
+        &:hover{
+          -webkit-transition: all .5s ease-out .0s;
+          transition: all .5s ease-out .0s;
+          filter:alpha(Opacity=100);-moz-opacity:1;opacity: 1;
+        }
+      }
+    }
   }
 }

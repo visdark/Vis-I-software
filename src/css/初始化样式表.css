@@ -2,6 +2,7 @@
 * {
   animation: all 5s infinite;
   -webkit-animation: all 5s infinite;
+  box-sizing: border-box;
 }
 html {
   padding: 0;
@@ -20,6 +21,7 @@ body {
   height: 100%;
   font-size: 100%;
   line-height: 1.6;
+  background-color: #000000;
 }
 html {
   font-size: 100%;
@@ -104,9 +106,5 @@ i {
   display: inline-block;
   font-style: normal;
   font-family: 'iconfont';
-  width: 3vh;
-  height: 3vh;
-  font-size: 1.5vh;
-  line-height: 3vh;
   text-align: center;
 }

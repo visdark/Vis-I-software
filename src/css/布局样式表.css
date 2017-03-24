@@ -1,43 +1,6 @@
-.box {
-  box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
-}
-.box .main-box {
-  position: relative;
-  top: 5vh;
-  box-sizing: border-box;
-  width: 90vw;
+.app-box {
   height: 90vh;
-  overflow: auto;
-  overflow-x: hidden;
-  background-color: #e4e4e4;
+  width: 90vw;
+  background-color: rgba(255, 255, 255, 0.2);
   margin: 0 auto;
-}
-.box .box1 {
-  font-size: 12px;
-  width: 50vw;
-  height: 10vh;
-  float: left;
-  overflow: auto;
-  overflow-x: hidden;
-}
-.box .box2 {
-  width: 50vw;
-  height: 20vw;
-  float: left;
-  overflow: auto;
-  overflow-x: hidden;
-}
-.box .box2 .title {
-  white-space: nowrap;
-  width: auto;
-  overflow: auto;
-  overflow-y: hidden;
-}
-.box .box2 .title a {
-  display: inline-block;
-  width: 10vw;
-  text-align: center;
-  background-color: #aaffaa;
 }

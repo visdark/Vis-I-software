@@ -1,22 +1,30 @@
+@import "全局动态函数值";  // 提取默认配置
 /*---图标默认样式重置（白色）--*/
 i {
-  color: rgba(255, 255, 255, 0.6);
+  color: @bai-6;
   &:hover {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(0, 0, 0, 0.4);
+    color: @bai-8;
+    background-color: @hei-4;
   }
 }
-
 /*---图标默认样式重置（黑色）--*/
 //i {
-//  color: rgba(0, 0, 0, 0.6);
+//  color: @hei-6;
 //  &:hover {
-//    color: rgba(0, 0, 0, 0.8);
-//    background-color: rgba(225, 225, 225, 0.4);
+//    color: @hei-8;
+//    background-color: @bai-4;
 //  }
 //}
-
 // 背景-红
 .bg-red:hover{
   background: rgba(255, 0, 0, 0.8);
+}
+// 图片资源样式
+body {
+  background: url("../images/bg.png") no-repeat center center fixed;
+}
+
+#foot {
+  background: url("../images/bg-foot.png") no-repeat bottom center fixed;
+  background-size: 100% 100%;
 }
