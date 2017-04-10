@@ -1,5 +1,6 @@
 // 字体大小 以32px为度量
 @size: 32px;
+@max-size: 2vh;
 @f-1: ceil(@size/32);
 @f-2: ceil(@size/16);
 @f-3: ceil(@size/12);
@@ -33,36 +34,78 @@
 @f-31: ceil(@size/1.05);
 @f-32: @size;
 //透明度 白色
-@bai-10:rgba(255, 255, 255, 1);
-@bai-8:rgba(255, 255, 255, 0.8);
-@bai-6:rgba(255, 255, 255, 0.6);
-@bai-4:rgba(255, 255, 255, 0.4);
-@bai-2:rgba(255, 255, 255, 0.2);
+@bai-10: rgba(255, 255, 255, 1);
+@bai-8: rgba(255, 255, 255, 0.8);
+@bai-6: rgba(255, 255, 255, 0.6);
+@bai-4: rgba(255, 255, 255, 0.4);
+@bai-2: rgba(255, 255, 255, 0.2);
 //透明度 黑色
-@hei-10:rgba(0, 0, 0, 1);
-@hei-8:rgba(0, 0, 0, 0.8);
-@hei-6:rgba(0, 0, 0, 0.6);
-@hei-4:rgba(0, 0, 0, 0.4);
-@hei-2:rgba(0, 0, 0, 0.2);
+@hei-10: rgba(0, 0, 0, 1);
+@hei-8: rgba(0, 0, 0, 0.8);
+@hei-6: rgba(0, 0, 0, 0.6);
+@hei-4: rgba(0, 0, 0, 0.4);
+@hei-2: rgba(0, 0, 0, 0.2);
 //透明度 红色 一般用来表示涨
-@red-10:rgba(255, 0, 0, 1);
-@red-8:rgba(255, 0, 0, 0.8);
-@red-6:rgba(255, 0, 0, 0.6);
-@red-4:rgba(255, 0, 0, 0.4);
-@red-2:rgba(255, 0, 0, 0.2);
+@red-10: rgba(255, 0, 0, 1);
+@red-8: rgba(255, 0, 0, 0.8);
+@red-6: rgba(255, 0, 0, 0.6);
+@red-4: rgba(255, 0, 0, 0.4);
+@red-2: rgba(255, 0, 0, 0.2);
 //透明度 绿色 一般用来表示涨
-@green-10:rgba(0,255, 0, 1);
-@green-8:rgba(0, 255, 0, 0.8);
-@green-6:rgba(0, 255, 0, 0.6);
-@green-4:rgba(0, 255, 0, 0.4);
-@green-2:rgba(0, 255, 0, 0.2);
+@green-10: rgba(0, 255, 0, 1);
+@green-8: rgba(0, 255, 0, 0.8);
+@green-6: rgba(0, 255, 0, 0.6);
+@green-4: rgba(0, 255, 0, 0.4);
+@green-2: rgba(0, 255, 0, 0.2);
 //透明度 主要配色
-@color-1:#011926;
-@color-2:#586C94;
-@color-3:#ffa207;
-@color-4:#1b303c;
+@color-1: #011926;
+@color-2: #586C94;
+@color-3: #ffa207;
+@color-4: #1b303c;
 @color-5: #273e86;
-@color-6:#436169;
-@color-7:#000;
-@color-8:#000;
-@color-9:#000;
+@color-6: #436169;
+@color-7: #000;
+@color-8: #000;
+@color-9: #000;
+
+// 常见函数
+
+// 居中
+.mid{
+  margin: 0 auto;
+}
+// 高度居中
+.h-mid(@h:3vh) {
+  height: @h;
+  line-height: @h;
+}
+// 一秒动画设置
+.dh(@s:1s,@d:0s){
+  -webkit-transition: all @s ease-out @d;
+  transition: all @s ease-out @d;
+}
+//透明度写法简化
+.filter(@tmd:50){
+filter:alpha(Opacity=@tmd);-moz-opacity:(@tmd/100);opacity:(@tmd/100);}
+
+//文字排列
+.t-c{
+text-align: center;}
+.t-r{
+  text-align: right;}
+.t-l{
+  text-align: left;}
+
+//有边框 无边框
+.bk-no{
+  border: none;
+}
+.bk-yes{
+  border: solid .01vh @bai-2;
+}
+
+//无边距
+.bj-no{
+  padding: 0;
+  margin: 0;
+}

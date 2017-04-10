@@ -1,0 +1,36 @@
+@import "全局动态函数值";
+.base(32);
+.base(@n, @i: 12) when (@i =< @n) {
+  .f-@{i} {
+    font-size: (@i * 1px);
+  }
+  .p-@{i} {
+    padding: (@i * 1px);
+  }
+  .m-t-@{i} {
+     margin-top: (@i * 1px);
+   }
+  .m-r-@{i} {
+    margin-right: (@i * 1px);
+  }
+  .m-b-@{i} {
+    margin-bottom: (@i * 1px);
+  }
+  .m-l-@{i} {
+    margin-left: (@i * 1px);
+  }
+  .m-t-@{i} {
+    margin-top: (@i * 1px);
+  }
+  .p-r-@{i} {
+    padding-right: (@i * 1px);
+  }
+  .p-b-@{i} {
+    padding-bottom: (@i * 1px);
+  }
+  .p-l-@{i} {
+    padding-left: (@i * 1px);
+  }
+  .base(@n, (@i + 2));
+}
+

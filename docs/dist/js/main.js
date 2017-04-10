@@ -58,7 +58,7 @@ document.onmousemove = function (ev) {
         d = getDistance(aImg[i]);
         d = Math.min(d, iMax);
 
-        aImg[i].width = ((iMax - d) / iMax) * 24 + 68;
+        aImg[i].width = ((iMax - d) / iMax) * 24 + 48;
     }
 };
 

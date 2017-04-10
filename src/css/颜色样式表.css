@@ -1,3 +1,25 @@
+.mid {
+  margin: 0 auto;
+}
+.t-c {
+  text-align: center;
+}
+.t-r {
+  text-align: right;
+}
+.t-l {
+  text-align: left;
+}
+.bk-no {
+  border: none;
+}
+.bk-yes {
+  border: solid 0.01vh rgba(255, 255, 255, 0.2);
+}
+.bj-no {
+  padding: 0;
+  margin: 0;
+}
 /*---图标默认样式重置（白色）--*/
 i {
   color: rgba(255, 255, 255, 0.6);

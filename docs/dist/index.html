@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <title>软件-程序主界面</title>
     <meta name="description" content="">
+    <!--字体文件包，下载后直接覆盖即可-->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_kt91jtjpwvasv2t9.css">
     <!--插件 引用-->
     <link rel="stylesheet" href="css/plug.min.css"/>
     <!--主样式表 引用-->
     <link rel="stylesheet" href="css/main.min.css"/>
-    <!--字体文件包，下载后直接覆盖即可-->
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_kt91jtjpwvasv2t9.css">
+
 </head>
 <body>
 <header>
@@ -19,28 +20,758 @@
             <i class="icon iconfont icon-zuidahua"></i>
             <i class="icon iconfont icon-guanbi bg-red"></i>
         </div>
-        <div class="top-con">FXBTG 一个账户链接全球市场 <a href="login.html">请登录..</a></div>
+        <div class="top-con">FXBTG 一个账户链接全球市场 </div>
     </div>
 </header>
+
+
+
+
 <div class="app-box" id="app">
+    <div class="app-box-l" id="app-box-l">
+        <div class="flex app-box-hd">
+            <div class="col col-10vw"><i class="icon iconfont icon-home"></i> 导航列表</div>
+            <div class="col flex titList">
+                <div class="col t-c on">
+                    产品列表
+                </div>
+                <div class="col t-c">
+                    <!--暂时隐藏-->
+                </div>
+                <div class="col t-c">
+                    <!--暂时隐藏-->
+                </div>
 
-    重新规划整理组件 ：APP-BOX
+            </div>
+            <!--<div class="col col-10vw"><i class="icon iconfont icon-home"></i> 主界面</div>-->
+            <!--<div class="col"><a href="#" class="on">产品列表</a></div>-->
+        </div>
+        <div class="app-box-bd">
+            <div class="app-nav"> 查看更多功能，请<a href="login.html">登录</a> <a href="login.html">登陆后页面</a></div>
+            <!--说明文档 此样式需要用到两个样式表 flex样式插件 和 产品列表样式 -->
+            <ul class="proList">
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-0">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-0"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-0">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-0"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-0">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-0"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-0">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-0"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-0">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-0"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-0">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-0"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
+                <li class="flex color-1">
+                    <div class="col col-10vw span"><i class="icon iconfont icon-1"></i>欧元/美元</div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">O</div>
+                        <div class="col t-r">0.389886</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">C</div>
+                        <div class="col t-r">0.38667</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">H</div>
+                        <div class="col t-r">0.389810</div>
+                    </div>
+                    <div class="col flex span">
+                        <div class="col t-c col-1vw">L</div>
+                        <div class="col t-r">0.389855</div>
+                    </div>
+                </li>
 
-    <div class="app-box-l">
-        <div class="app-box-hd">盒子页头</div>
-        <div class="app-box-hd">左边盒子</div>
-        <div class="app-box-fd">盒子页尾</div>
+            </ul>
+        </div>
+        <div class="app-box-ft">盒子页尾</div>
     </div>
+   <div class="app-box-r">
+        <div class="app-box-hd">
+            <i class="icon iconfont icon-close bg-red left" onClick="doAct(this, 'app-box-l');"></i>
+        <div class="app-box-bd">
+            <div class="buju-box vis-4-5" id="vis-flex">
+                <div class="vis">
+                    <div class="vis-col"><div class="vis-box"> 盒子模型1</div></div>
+                    <div class="vis-col"><div class="vis-box"> 盒子模型2</div></div>
+                    <div class="vis-col"><div class="vis-box"> 盒子模型3</div></div>
+                    <div class="vis-col"><div class="vis-box"> 盒子模型4</div></div>
+                    <div class="vis-col"><div class="vis-box"> 盒子模型5</div></div>
+                    <div class="vis-col"><div class="vis-box"> 盒子模型6</div></div>
+                    <div class="vis-col"><div class="vis-box"> 盒子模型7</div></div>
+                    <div class="vis-col"><div class="vis-box"> 盒子模型8</div></div>
+                    <div class="vis-col"><div class="vis-box"> 盒子模型1</div></div>
+                    <div class="vis-col"><div class="vis-box"> 盒子模型2</div></div>
+                    <div class="vis-col"><div class="vis-box"> 盒子模型3</div></div>
+                    <div class="vis-col"><div class="vis-box"> 盒子模型4</div></div>
+                    <div class="vis-col"><div class="vis-box"> 盒子模型5</div></div>
+                    <div class="vis-col"><div class="vis-box"> 盒子模型6</div></div>
+                    <div class="vis-col"><div class="vis-box"> 盒子模型7</div></div>
+                    <div class="vis-col"><div class="vis-box"> 盒子模型8</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="app-box-ft">盒子页尾</div>
+    </div>
+
     <div class="app-box-m">
-        <div class="app-box-hd">盒子页头</div>
-        <div class="app-box-hd">中间盒子</div>
-        <div class="app-box-fd">盒子页尾</div>
-    </div>
-    <div class="app-box-r">
-        <div class="app-box-hd">盒子页头</div>
-        <div class="app-box-hd">右边盒子</div>
-        <div class="app-box-fd">盒子页尾</div>
-    </div>
+    <div class="app-box-hd">盒子页头</div>
+    <div class="app-box-bd">中间盒子</div>
+    <div class="app-box-ft">盒子页尾</div>
+</div>
 
 
     <!--<div class="box-left" id="leftbox">-->
@@ -335,6 +1066,7 @@
 
     <!--</div>-->
 </div>
+    </div>
 <footer>
     <div id="foot">
         <ul>

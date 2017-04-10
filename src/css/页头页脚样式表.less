@@ -1,46 +1,45 @@
-@import "全局动态函数值";  // 提取默认配置
-header{
+@import "全局动态函数值"; // 提取默认配置
+header {
   height: 5vh;
   display: block;
   position: relative;
 }
-footer{
+
+footer {
   height: 5vh;
   bottom: 0;
 }
-#top{
+
+#top {
   display: inline-flex;
   width: 100%;
-  align-items:center;
+  align-items: center;
   color: @bai-6;
   padding: 0 @f-12;
-  font-size: @f-12;
-  .top-icon{
+  .top-icon {
     width: auto;
     position: fixed;
     right: 0;
-    top:0;
-    .bg-red:hover{
-      -webkit-transition: all 1s ease-out .2s;
-      transition: all 1s ease-out .2s;
+    top: 0;
+    .bg-red:hover {
+      .dh(1s, .2s);
     }
-    i{
+    i {
       display: block;
       float: left;
       cursor: pointer;
       width: 4vh;
-      height: 3vh;
-      line-height: 3vh;
+      .h-mid();
       font-size: @f-14;
-      &:hover{
-        -webkit-transition: all 1s ease-out .0s;
-        transition: all 1s ease-out .0s;
+      &:hover {
+        .dh();
       }
 
     }
   }
-  .top-con{
-    height: 5vh;line-height: 5vh;;font-size: @f-12;
+  .top-con {
+    .h-mid(5vh);
+    font-size: @f-12;
   }
 }
 
@@ -49,25 +48,24 @@ footer{
   bottom: 0;
   text-align: center;
   width: 100vw;
-  ul{
+  ul {
     width: 76vw;
     margin: 0 auto;
     overflow: hidden;
     max-height: 20vh;
-    li{
+    li {
       display: inline-block;
-      a{
+      a {
         display: block;
-        color:@bai-8;
+        color: @bai-8;
         padding: 0 @f-10;
-        filter:alpha(Opacity=50);-moz-opacity:0.5;opacity: 0.5;
-        &.on{
-          filter:alpha(Opacity=100);-moz-opacity:1;opacity: 1;
+        .filter();
+        &.on {
+          .filter(100);
         }
-        &:hover{
-          -webkit-transition: all .5s ease-out .0s;
-          transition: all .5s ease-out .0s;
-          filter:alpha(Opacity=100);-moz-opacity:1;opacity: 1;
+        &:hover {
+          .dh(.5s);
+          .filter(100);
         }
       }
     }

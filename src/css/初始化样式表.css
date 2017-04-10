@@ -1,3 +1,25 @@
+.mid {
+  margin: 0 auto;
+}
+.t-c {
+  text-align: center;
+}
+.t-r {
+  text-align: right;
+}
+.t-l {
+  text-align: left;
+}
+.bk-no {
+  border: none;
+}
+.bk-yes {
+  border: solid 0.01vh rgba(255, 255, 255, 0.2);
+}
+.bj-no {
+  padding: 0;
+  margin: 0;
+}
 /*---默认全局都有动画--*/
 * {
   animation: all 5s infinite;
@@ -21,7 +43,7 @@ body {
   height: 100%;
   font-size: 100%;
   line-height: 1.6;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 html {
   font-size: 100%;
@@ -93,7 +115,7 @@ svg:not(:root) {
 }
 /*---滚动条大小--*/
 ::-webkit-scrollbar {
-  width: 4px;
+  width: .2rem;
   height: 4px;
 }
 /*---滚动框背景样式--*/
