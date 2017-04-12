@@ -117,7 +117,7 @@
 .col(@col, @i: 1) when (@i =< @col) {
   .col-@{i} {
     flex: 0 0 (@i/12);
-    max-width: (@i/12);
+    max-width: (@i/12)*100%;
   }
   .col(@col, (@i + 1));
 }

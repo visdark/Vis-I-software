@@ -1,0 +1,131 @@
+.flex {
+  display: flex;
+}
+.flex.flex-r {
+  flex-direction: row;
+}
+.flex.flex-r-r {
+  flex-direction: row-reverse;
+}
+.flex.flex-c {
+  flex-direction: column;
+}
+.flex.flex-c-r {
+  flex-direction: column-reverse;
+}
+.flex.flex-w-n {
+  flex-wrap: nowrap;
+}
+.flex.flex-w {
+  flex-wrap: wrap;
+}
+.flex.flex-w-r {
+  flex-wrap: wrap-reverse;
+}
+.flex.flex-x-f-s {
+  justify-content: flex-start;
+}
+.flex.flex-x-f-e {
+  justify-content: flex-end;
+}
+.flex.flex-x-f-c {
+  justify-content: center;
+}
+.flex.flex-x-f-s-b {
+  justify-content: space-between;
+}
+.flex.flex-x-f-s-a {
+  justify-content: space-around;
+}
+.flex.flex-y-f-s {
+  align-items: flex-start;
+}
+.flex.flex-y-f-e {
+  align-items: flex-end;
+}
+.flex.flex-y-f-c {
+  align-items: center;
+}
+.flex.flex-y-f-s-b {
+  align-items: baseline;
+}
+.flex.flex-y-f-s-a {
+  align-items: stretch;
+}
+.flex.flex-xy-f-s {
+  align-content: flex-start;
+}
+.flex.flex-xy-f-e {
+  align-content: flex-end;
+}
+.flex.flex-xy-f-c {
+  align-content: center;
+}
+.flex.flex-xy-f-s-b {
+  align-content: space-between;
+}
+.flex.flex-xy-f-s-a {
+  align-content: space-around;
+}
+.flex.flex-xy-f-n {
+  align-content: stretch;
+}
+.col {
+  flex: 1 1 auto;
+}
+.col-1 {
+  flex: 0 0 0.08333333;
+  max-width: 8.33333333%;
+}
+.col-2 {
+  flex: 0 0 0.16666667;
+  max-width: 16.66666667%;
+}
+.col-3 {
+  flex: 0 0 0.25;
+  max-width: 25%;
+}
+.col-4 {
+  flex: 0 0 0.33333333;
+  max-width: 33.33333333%;
+}
+.col-5 {
+  flex: 0 0 0.41666667;
+  max-width: 41.66666667%;
+}
+.col-6 {
+  flex: 0 0 0.5;
+  max-width: 50%;
+}
+.col-7 {
+  flex: 0 0 0.58333333;
+  max-width: 58.33333333%;
+}
+.col-8 {
+  flex: 0 0 0.66666667;
+  max-width: 66.66666667%;
+}
+.col-9 {
+  flex: 0 0 0.75;
+  max-width: 75%;
+}
+.col-10 {
+  flex: 0 0 0.83333333;
+  max-width: 83.33333333%;
+}
+.col-11 {
+  flex: 0 0 0.91666667;
+  max-width: 91.66666667%;
+}
+.col-12 {
+  flex: 0 0 1;
+  max-width: 100%;
+}
+.col-10vw {
+  flex: 0 0 10vw;
+  max-width: 10vw;
+}
+.col-1vw {
+  flex: 0 0 1vw;
+  max-width: 1vw;
+}

@@ -1,0 +1,76 @@
+@import "全局动态函数值";
+/*---默认全局都有动画--*/
+* {
+  animation: all 5s infinite;
+  -webkit-animation: all 5s infinite;
+  box-sizing: border-box;
+}
+/*---默认盒子属性的声明--*/
+.box,[box]{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+}
+html {
+  .box;
+  overflow: hidden;
+  font-size: 100%;
+}
+body {
+  .box;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.6;
+}
+/*---默认隐藏属性的声明--*/
+.hidden,
+[hidden] {
+  display: none !important;
+}
+/*---默认图片的展现形式--*/
+.img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/*---默认分割线的样式--*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*---默认清除样式--*/
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table;
+}
+.clear:after {
+  clear: both;
+}
+/*---布局示范样式--*/
+// 十二格子 flex排列属性
+.col{
+  flex: 1 1 auto;
+}
+.col(12);
+.col(@col, @i: 1) when (@i =< @col) {
+  .col-@{i} {
+    flex: 0 0 (@i/12);
+    max-width: (@i/12)*100%;
+  }
+  .col(@col, (@i + 1));
+}
+/*---盒子构架开始--*/
+// 图片资源样式
+.app-box{
+
+  color: @bai-8;
+  font-size: 1rem;
+}
+

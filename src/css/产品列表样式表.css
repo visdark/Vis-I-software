@@ -22,9 +22,12 @@
 }
 ul.proList {
   border-top: solid 1px rgba(255, 255, 255, 0.2);
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 81vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  z-index: 3;
   overflow-y: scroll;
+  position: absolute;
+  top: 0;
 }
 ul.proList li {
   box-sizing: border-box;

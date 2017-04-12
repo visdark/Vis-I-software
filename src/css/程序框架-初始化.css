@@ -1,0 +1,141 @@
+.mid {
+  margin: 0 auto;
+}
+.t-c {
+  text-align: center;
+}
+.t-r {
+  text-align: right;
+}
+.t-l {
+  text-align: left;
+}
+.bk-no {
+  border: none;
+}
+.bk-yes {
+  border: solid 0.01vh rgba(255, 255, 255, 0.2);
+}
+.bj-no {
+  padding: 0;
+  margin: 0;
+}
+/*---默认全局都有动画--*/
+* {
+  animation: all 5s infinite;
+  -webkit-animation: all 5s infinite;
+  box-sizing: border-box;
+}
+/*---默认盒子属性的声明--*/
+.box,
+[box] {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+}
+html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.6;
+}
+/*---默认隐藏属性的声明--*/
+.hidden,
+[hidden] {
+  display: none !important;
+}
+/*---默认图片的展现形式--*/
+.img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/*---默认分割线的样式--*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*---默认清除样式--*/
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table;
+}
+.clear:after {
+  clear: both;
+}
+/*---布局示范样式--*/
+.col {
+  flex: 1 1 auto;
+}
+.col-1 {
+  flex: 0 0 0.08333333;
+  max-width: 8.33333333%;
+}
+.col-2 {
+  flex: 0 0 0.16666667;
+  max-width: 16.66666667%;
+}
+.col-3 {
+  flex: 0 0 0.25;
+  max-width: 25%;
+}
+.col-4 {
+  flex: 0 0 0.33333333;
+  max-width: 33.33333333%;
+}
+.col-5 {
+  flex: 0 0 0.41666667;
+  max-width: 41.66666667%;
+}
+.col-6 {
+  flex: 0 0 0.5;
+  max-width: 50%;
+}
+.col-7 {
+  flex: 0 0 0.58333333;
+  max-width: 58.33333333%;
+}
+.col-8 {
+  flex: 0 0 0.66666667;
+  max-width: 66.66666667%;
+}
+.col-9 {
+  flex: 0 0 0.75;
+  max-width: 75%;
+}
+.col-10 {
+  flex: 0 0 0.83333333;
+  max-width: 83.33333333%;
+}
+.col-11 {
+  flex: 0 0 0.91666667;
+  max-width: 91.66666667%;
+}
+.col-12 {
+  flex: 0 0 1;
+  max-width: 100%;
+}
+/*---盒子构架开始--*/
+.app-box {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+}
